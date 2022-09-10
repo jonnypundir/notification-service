@@ -1,0 +1,17 @@
+################### WEB SERVER CONFIGURATION ###################
+server:
+  port: "${PORT:9090}"
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  data:
+    mongodb:
+      database: "vehicle-solution"
+      port: "27017"
+
+################### LOGGING CONFIGURATION ########################
+logging:
+  level:
+    '[org.springframework.cloud.gateway]': INFO
