@@ -9,7 +9,7 @@ import org.springframework.ui.freemarker.FreeMarkerConfigurationFactoryBean;
 public class ApiConfig {
     @Primary
     @Bean
-    FreeMarkerConfigurationFactoryBean getFreeMarker(){
+    public FreeMarkerConfigurationFactoryBean getFreeMarker(){
         FreeMarkerConfigurationFactoryBean bean = new FreeMarkerConfigurationFactoryBean();
         bean.setTemplateLoaderPath("classpath:/templates");
         return bean;
