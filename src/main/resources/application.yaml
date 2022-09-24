@@ -32,19 +32,7 @@ spring:
           timeout: 5000
           writetimeout: 5000
           ssl:
-            enable: true
-############### TLS Port 587 ###########################################
-  #        starttls:
-  #          enable: true
-############### SSL, post 465 #######################################
-          #socketFactory:
-          #  port: 465
-          #  class: javax.net.ssl.SSLSocketFactory
-################# MAIL CONFIGURATION CLOSED #######################
-
-
-################### LOGGING CONFIGURATION ########################
-logging:
+            enable: truelogging:
   level:
     '[org.springframework.cloud.gateway]': INFO
 
